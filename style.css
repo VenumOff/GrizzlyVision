@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Ubuntu";
+    src: url("/fonts/Ubuntu-Regular.woff2") format("woff2"),
+        url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* GENERAL */
+
+body {
+    margin: 15px;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+header #logo_header img {
+    height: 100px;
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+}
