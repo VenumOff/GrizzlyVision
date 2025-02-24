@@ -31,3 +31,9 @@
 • Mofication : <i class="fa-solid fa-pencil"></i>
 
 • Profil : <i class="fa-solid fa-user"></i>
+
+• Image : <i class="fa-solid fa-image"></i>
+
+• Vidéo : <i class="fa-solid fa-film"></i>
+
+• Image/Vidéo : <i class="fa-solid fa-photo-film"></i>
