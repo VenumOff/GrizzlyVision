@@ -13,29 +13,46 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 /* GENERAL */
 
 body {
-    margin: 15px;
+    margin: 10px;
 }
 
 /* HEADER */
 
 header {
+    height: 15vh;
+}
+
+header #top_header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
 }
 
 header #logo_header img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
 }
 
 header nav {
     display: flex;
+    gap: 35px;
+}
+
+header #search
+
+header #search_nav button {
+    background: none;
+    border: none;
+}
+
+header #search_nav input {
+    width: 300px;
+    /* border: none; */
 }
