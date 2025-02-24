@@ -1,7 +1,19 @@
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
+}
+
 /* HEADER */
 
 header {
     height: 15vh;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 header #top_header {
@@ -12,7 +24,7 @@ header #top_header {
 }
 
 header #logo_header img {
-    height: 80px;
+    height: 100px;
 }
 
 header nav {
@@ -20,12 +32,107 @@ header nav {
     gap: 35px;
 }
 
-header #search header #search_nav button {
+header nav div {
+    background-color: #00000087;
+    height: 40px;
+    width: 600px;
+    border-radius: 40px;
+    border: 2.5px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+}
+
+header #search_button {
     background: none;
     border: none;
 }
 
-header #search_nav input {
+header #search_button i {
+    color: #ff3b3b;
+    font-size: 24px;
+}
+
+header nav input {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+}
+
+header nav span {
+    font-size: 32px;
+    color: #fff;
+}
+
+header #filter_button {
+    background-color: #00000087;
+    height: 40px;
+    width: 125px;
+    border-radius: 40px;
+    border: 2.5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    gap: 15px;
+}
+
+header #filter_button i {
+    color: #ff3b3b;
+    font-size: 24px;
+}
+
+header #connect {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header #log_in {
+    background-color: #00000087;
+    height: 40px;
+    border-radius: 40px;
+    border: 2.5px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+    color: #ff3b3b;
+    font-weight: bold;
+}
+
+header #sign_up {
+    background-color: #ff3b3b;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header #switch_mod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .switch__mod__button {
+    border: 0;
+    border-radius: 40px;
+    background-color: #ccc;
     width: 300px;
-    /* border: none; */
+    height: 35px;
+}
+
+header .switch__mod__dot {
+    display: inline;
+    color: #fff;
+    font-size: 80px;
 }
