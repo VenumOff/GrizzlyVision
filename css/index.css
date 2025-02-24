@@ -1,0 +1,31 @@
+/* HEADER */
+
+header {
+    height: 15vh;
+}
+
+header #top_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo_header img {
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    gap: 35px;
+}
+
+header #search header #search_nav button {
+    background: none;
+    border: none;
+}
+
+header #search_nav input {
+    width: 300px;
+    /* border: none; */
+}
