@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px 150px;
+    flex-wrap: wrap;
+}
+
+#message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: auto;
+    padding: 50px;
+
+    color: white;
+}
+
+#message h1{
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+#message span{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+#inscription{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: auto;
+    padding: 50px;
+
+    background-color: rgba(0, 0, 0, 0.500);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: #FF3B3B;
+}
+
+
+/* #inscription h2{
+    top: 5px;
+    } */
+    
+#sinscrure_button{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 7px 20px;
+    margin: 40px 0px 10px 0px;
+    border: 2px solid #FF3B3B;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+#sinscrure_button:hover{
+    background-color: #FF3B3B;
+    cursor: pointer;
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulaire input{
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+#mdp_oublie{
+    color: #FF3B3B;
+    padding-left: 10px;
+}
+
+#mdp_oublie:hover{
+    color: white;
+    text-decoration: underline #FF3028 2px;
+}
+
+#connexion_button{
+    background-color: #FF3B3B;
+    padding: 7px 20px;
+    margin: 40px 0px 10px 0px;
+    border: 2px solid #ff3b3b00; 
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+#connexion_button:hover{
+    background-color: #B22222;
+    cursor: pointer;
+}
