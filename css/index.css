@@ -92,6 +92,10 @@ header #connect {
     gap: 35px;
 }
 
+header #connect #connect_icon {
+    display: none;
+}
+
 header #log_in {
     background-color: #00000087;
     height: 50px;
@@ -160,11 +164,44 @@ header .switch__mod__button span {
 
 header #switch_mod ul {
     display: flex;
-    width: 300px;
+    width: 290px;
     padding: 0 15px;
     justify-content: space-between;
 }
 
 header #switch_mod i {
     font-size: 30px;
+}
+
+.switch__mod--choice {
+    color: #ff3b3b;
+}
+
+@media (max-width: 834px) {
+    /* DISPLAY */
+
+    header nav div span,
+    header nav div input {
+        display: none;
+    }
+
+    header #connect #log_in,
+    header #connect #sign_up {
+        display: none;
+    }
+
+    header #connect #connect_icon {
+        display: block;
+    }
+
+    /* DISPLAY */
+
+    body {
+        margin: 0;
+    }
+
+    header nav div {
+        width: 45%;
+        justify-content: center;
+    }
 }
