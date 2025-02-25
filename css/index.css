@@ -38,6 +38,7 @@ header nav div {
 header #search_button {
     background: none;
     border: none;
+    border-right: 2.5px solid white;
 }
 
 header #search_button:hover {
@@ -47,6 +48,7 @@ header #search_button:hover {
 header #search_button i {
     color: #ff3b3b;
     font-size: 24px;
+    margin-right: 10px;
 }
 
 header nav input {
@@ -54,12 +56,11 @@ header nav input {
     border: none;
     font-size: 24px;
     color: #fff;
-    width: 100%;
+    width: auto;
 }
 
-header nav span {
-    font-size: 32px;
-    color: #fff;
+#search_bar{
+    width: 45vw;
 }
 
 header #filter_button {
@@ -177,9 +178,7 @@ header #switch_mod i {
     color: #ff3b3b;
 }
 
-@media (max-width: 834px) {
-    /* DISPLAY */
-
+@media (max-width: 1280px) {
     header nav div span,
     header nav div input {
         display: none;
@@ -192,16 +191,40 @@ header #switch_mod i {
 
     header #connect #connect_icon {
         display: block;
-    }
+        font-size: 36px;
+        color: black;
 
+        position: absolute;
+        top: 55px;
+        right: 25px;
+    }
+}
+
+@media (max-width: 834px) {
     /* DISPLAY */
 
-    body {
+
+    /*search barre*/
+    header #search_button{
+        border-right: none;
+        margin: 0px 30px; 
+    }
+
+    header #search_button i{
         margin: 0;
     }
 
-    header nav div {
-        width: 45%;
-        justify-content: center;
+    #search_bar{
+        width: auto;
+    }
+    /*search barre*/
+
+
+    /* DISPLAY */
+    header #top_header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
