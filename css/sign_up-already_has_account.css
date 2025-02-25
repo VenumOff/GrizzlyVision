@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ body{
     flex-wrap: wrap;
 }
 
-#message{
+#message {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,17 +25,18 @@ body{
     color: white;
 }
 
-#message h1{
+#message h1 {
     font-size: 34px;
     padding-bottom: 10px;
 }
 
-#message span{
+#message span {
     font-size: 24px;
     padding-bottom: 10px;
+    text-align: center;
 }
 
-#inscription{
+#inscription {
     position: relative;
 
     display: flex;
@@ -47,107 +48,102 @@ body{
     height: auto;
     padding: 50px;
 
-    background-color: rgba(0, 0, 0, 0.500);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid white;
     border-radius: 20px;
-    color: #FF3B3B;
+    color: #ff3b3b;
 }
 
-
-#formulaire{
+#formulaire {
     display: flex;
     flex-direction: column;
 }
 
-#formulaire input{
+#formulaire input {
     padding: 5px 20px;
     margin: 5px;
     border-radius: 50px;
     font-size: 16px;
 }
 
-
 /*sign up and already has account*/
-#deja-inscrit_button, #hasaccount_sinscrire_button{
+#deja-inscrit_button,
+#hasaccount_sinscrire_button {
     background-color: rgba(0, 0, 0, 0);
     padding: 7px 20px;
     margin: 40px 0px 10px 0px;
     border: 2px solid white;
     border-radius: 50px;
-    color: #FF3B3B;
+    color: #ff3b3b;
     font-size: 18px;
 }
 
-#deja-inscrit_button:hover, #hasaccount_sinscrire_button:hover{
-    background-color: #FF3B3B;
+#deja-inscrit_button:hover,
+#hasaccount_sinscrire_button:hover {
+    background-color: #ff3b3b;
     color: white;
     cursor: pointer;
 }
 
-
-
-#signup_sinscrir_button, #connexion_button{
-    background-color: #FF3B3B;
+#signup_sinscrir_button,
+#connexion_button {
+    background-color: #ff3b3b;
     padding: 7px 20px;
     margin: 40px 0px 10px 0px;
-    border: 2px solid #ff3b3b00; 
+    border: 2px solid #ff3b3b00;
     border-radius: 50px;
     color: white;
     font-size: 18px;
 }
 
-#signup_sinscrir_button:hover, #connexion_button:hover{
-    background-color: #B22222;
+#signup_sinscrir_button:hover,
+#connexion_button:hover {
+    background-color: #b22222;
     cursor: pointer;
 }
 /*sign up and already has account*/
 
-
-
-
 /*already has account*/
-#mdp_oublie{
-    color: #FF3B3B;
+#mdp_oublie {
+    color: #ff3b3b;
     padding-left: 10px;
 }
 
-#mdp_oublie:hover{
+#mdp_oublie:hover {
     color: white;
     text-decoration: underline #742b28 2px;
 }
 /*already has account*/
 
-
-
 @media (max-width: 834px) {
-    #message{
+    #message {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
         width: 80%;
         height: auto;
     }
 
-    #message h1{
+    #message h1 {
         font-size: 24px;
         padding-bottom: 10px;
     }
-    
-    #message span{
+
+    #message span {
         font-size: 20px;
         padding-bottom: 10px;
+        text-align: center;
     }
 
-
-    body{
+    body {
         flex-direction: column;
         margin: 0px 0px;
         flex-wrap: nowrap;
     }
 
-    #inscription{
+    #inscription {
         width: 90%;
     }
-  }
+}
