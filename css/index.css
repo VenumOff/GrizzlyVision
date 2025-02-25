@@ -2,6 +2,9 @@
 
 header {
     height: 15vh;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 header #top_header {
@@ -12,7 +15,7 @@ header #top_header {
 }
 
 header #logo_header img {
-    height: 80px;
+    height: 130px;
 }
 
 header nav {
@@ -20,12 +23,148 @@ header nav {
     gap: 35px;
 }
 
-header #search header #search_nav button {
+header nav div {
+    background-color: #00000087;
+    height: 50px;
+    width: 600px;
+    border-radius: 40px;
+    border: 2.5px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+}
+
+header #search_button {
     background: none;
     border: none;
 }
 
-header #search_nav input {
+header #search_button:hover {
+    cursor: pointer;
+}
+
+header #search_button i {
+    color: #ff3b3b;
+    font-size: 24px;
+}
+
+header nav input {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+}
+
+header nav span {
+    font-size: 32px;
+    color: #fff;
+}
+
+header #filter_button {
+    background-color: #00000087;
+    height: 50px;
+    width: 125px;
+    border-radius: 40px;
+    border: 2.5px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    gap: 15px;
+    color: #ff3b3b;
+}
+
+header #filter_button:hover {
+    cursor: pointer;
+    background-color: #ff3b3b;
+    color: white;
+}
+
+header #filter_button i {
+    font-size: 24px;
+}
+
+header #connect {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+header #log_in {
+    background-color: #00000087;
+    height: 50px;
+    border-radius: 40px;
+    border: 2.5px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+    color: #ff3b3b;
+    font-weight: bold;
+}
+
+header #log_in:hover {
+    background-color: #ff3b3b;
+    color: #fff;
+}
+
+header #sign_up {
+    background-color: #ff3b3b;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 15px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header #sign_up:hover {
+    background-color: #b22222;
+}
+
+header #switch_mod {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .switch__mod__button {
+    border: 0;
+    border-radius: 40px;
+    background-color: #00000087;
+    border: 2.5px solid #fff;
     width: 300px;
-    /* border: none; */
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+header .switch__mod__button:hover {
+    cursor: pointer;
+}
+
+header .switch__mod__button span {
+    background-color: #ff3b3b;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+header #switch_mod ul {
+    display: flex;
+    width: 300px;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+header #switch_mod i {
+    font-size: 30px;
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrizzlyVision - Accueil</title>
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
 </head>
@@ -21,30 +21,30 @@
                     title="Logo Grizzly Vision">
             </a>
             <nav>
-                <div id="search_nav">
-                    <button id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button> |
+                <div>
+                    <button id="search_button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <span>|</span>
                     <input type="search" name="search_input" placeholder="Rechercher...">
                 </div>
                 <button id="filter_button"><i class="fa-solid fa-align-left"></i></button>
             </nav>
-            <a id="profil_nav">
-                <i class="fa-solid fa-user"></i>
-            </a>
+            <div id="connect">
+                <a href="/html/log_in.html" id="log_in">
+                    Se connecter
+                </a>
+                <a href="/html/sign_up.html" id="sign_up">
+                    S'inscrire
+                </a>
+            </div>
         </div>
         <div id="switch_mod">
-            <button id="switch_mod_img" style="display: none;">
-                <div></div>
-            </button>
-            <button id="switch_mod_vid" style="display: none;">
-                <div></div>
-            </button>
-            <button id="switch_mod_img_vid">
-                <div></div>
+            <button id="switch_mod_img_vid" class="switch__mod__button">
+                <span></span>
             </button>
             <ul>
-                <li><i class="fa-solid fa-image"></i></li>
-                <li><i class="fa-solid fa-film"></i></li>
-                <li><i class="fa-solid fa-photo-film"></i></li>
+                <li><i class="fa-solid fa-image switch__mod--choice" id="switch_mod_icon_1"></i></li>
+                <li><i class="fa-solid fa-film switch__mod--choice" id="switch_mod_icon_2"></i></li>
+                <li><i class="fa-solid fa-photo-film switch__mod--choice" id="switch_mod_icon_3"></i></li>
             </ul>
         </div>
     </header>
@@ -56,7 +56,7 @@
     <footer>
 
     </footer>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

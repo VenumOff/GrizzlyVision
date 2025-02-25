@@ -17,14 +17,25 @@ body {
     text-decoration: none;
 }
 
-/* GENERAL */
-
 body {
     margin: 10px;
 
-    background: linear-gradient(217deg, rgba(145, 74, 74, 0.8), rgba(255, 0, 0, 0) 70.71%),
-                linear-gradient(127deg, #000000, rgba(0,255,0,0) 70.71%),
-                linear-gradient(336deg, #B22222, rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(
+            217deg,
+            rgba(145, 74, 74, 0.8),
+            rgba(255, 0, 0, 0) 70.71%
+        ),
+        linear-gradient(127deg, #000000, rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, #b22222, rgba(0, 0, 255, 0) 70.71%);
     background-attachment: fixed;
     background-size: cover;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
 }
