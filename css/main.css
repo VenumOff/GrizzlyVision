@@ -17,8 +17,6 @@ body {
     text-decoration: none;
 }
 
-/* GENERAL */
-
 body {
     margin: 10px;
 
@@ -31,4 +29,13 @@ body {
         linear-gradient(336deg, #b22222, rgba(0, 0, 255, 0) 70.71%);
     background-attachment: fixed;
     background-size: cover;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    background: none;
 }
