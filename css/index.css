@@ -179,11 +179,6 @@ header #switch_mod i {
 }
 
 @media (max-width: 1280px) {
-    header nav div span,
-    header nav div input {
-        display: none;
-    }
-
     header #connect #log_in,
     header #connect #sign_up {
         display: none;
@@ -205,6 +200,18 @@ header #switch_mod i {
 
 
     /*search barre*/
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    #filter_button{
+        margin: 10px;
+    }
+
+
     header #search_button{
         border-right: none;
         margin: 0px 30px; 
@@ -215,7 +222,11 @@ header #switch_mod i {
     }
 
     #search_bar{
-        width: auto;
+        width: 70vw;
+    }
+
+    header nav input {
+        width: 40vw;
     }
     /*search barre*/
 
