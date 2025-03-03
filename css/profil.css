@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#connect_icon{
+    display: block;
+    font-size: 60px;
+    margin-top: 30px;
+    color: black;
+}
+
+header span{
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    font-size: 36px;
+}
+
+header #modify_profil{
+    background-color: #fff;
+    border: 2px solid white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    color: black;
+    font-weight: bold;
+}
+
+header #modify_profil:hover{
+    background-color:#ff3b3b;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    color: black;
+    font-weight: bold;
+}
