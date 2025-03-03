@@ -1,0 +1,141 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#retour_profil{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 30px;
+    color: white;
+}
+
+#connect_icon{
+    display: block;
+    font-size: 60px;
+    margin-top: 30px;
+    color: black;
+}
+
+header span{
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    font-size: 36px;
+}
+
+header #modify_profil{
+    background-color: #fff;
+    border: 2px solid white;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    color: black;
+    font-weight: bold;
+}
+
+header #modify_profil:hover{
+    background-color:#ff3b3b;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 10px 65px;
+    color: black;
+    font-weight: bold;
+}
+
+#gestion_profil{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+
+    width: 95%;
+    height: auto;
+
+    padding: 10px 20px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 20px;
+    color: #ff3b3b;
+}
+
+#button_gestion_profil{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#button_gestion_profil button{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 7px 20px;
+    margin: 40px 0px 10px 0px;
+    border: 2px solid #ff3b3b;
+    border-radius: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+#selection_photos_videos{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    justify-self: center;
+    border-bottom:1px solid white;
+    width: 30vw;
+}
+
+#selection_photos_videos button{
+    margin: 10px 50px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #00000000;
+    color: white;
+    font-size: 18px;
+}
+
+#photos_button:hover::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -1px;
+    height: 3px;
+    background-color: white;
+    width: 55px;
+}
+
+#videos_button:hover::after{
+    content: "";
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -1px;
+    height: 3px;
+    background-color: white;
+    width: 55px;
+}
+
+@media (max-width: 834px) {
+    #gestion_profil{
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+    }
+
+    #gestion_profil h2{
+        display: none;
+    }
+    
+    #button_gestion_profil button{
+        margin: 0px 0px 0px 0px;
+        border: 4px solid #ff3b3b;
+    }
+
+    #selection_photos_videos{
+        display: none;
+    }
+}
